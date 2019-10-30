@@ -98,7 +98,7 @@ d3.csv("../../data.csv", function(err, myData) {
         itemString = "Smoker: ";
       }
       if (currentAxisLabelY === "incomeMoe") {
-        incomeString = "High Income: ";
+        incomeString = "Healthcare: ";
       }
       else {
         incomeString = "Poverty Stricken: ";
@@ -178,7 +178,7 @@ d3.csv("../../data.csv", function(err, myData) {
     .attr("dy", "1em")
     .attr("class", "axis-text")
     .attr("data-axis-name", "incomeMoe")
-    .text("High Income");
+    .text("Healthcare");
 
   // Append x-axis labels
   chart
@@ -280,7 +280,7 @@ function writeAnalysis(xAxis, yAxis) {
   const analysisText = parent.document.getElementById('analysis');
 
   const responses = ["There is a strong negative correlation (-0.751735757) between having at least a low income and being obesity.",
-                  "There is a negative correlation (-0.617179941) between having a high income and being a current smoker.",
+                  "There is a negative correlation (-0.617179941) between having a Healthcare and being a current smoker.",
                   "There is a positive correlation (0.67396584) between being having healthcare and being obesity.",
                   "There is a strong positive correlation (0.757923374) between having a low income and being a current smoker."];
 
