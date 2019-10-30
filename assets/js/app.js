@@ -15,6 +15,16 @@ import * as d3 from "d3";
 // Requires modules
 const d3 = require("d3");
 
+const chart = d3.select(document.createElement('div'))
+chart
+  .style('position', 'absolute')
+  .style('top', 0)
+  .style('opacity', 0)
+  .style('top', '0')
+  .style('opacity', '0')
+  .style('pointer-events', 'none')
+  .style('box-sizing', 'border-box')
+
 // Append an SVG group
 const chart = svg.append("g");
 
